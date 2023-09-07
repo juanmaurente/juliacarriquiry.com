@@ -1,0 +1,47 @@
+@import './normalize.css';
+
+:root {
+	--color-primary: #4a548c;
+	--color-secondary: #f0f0f2;
+	--color-accent: #1c8c6c;
+	--color-headings: #223440;
+	--color-gray: #f0f0f0;
+	--color-body: #fff;
+	--color-body-darker: #5c5577;
+	--color-border: #657a8c;
+	--border-radius: 30px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* Typography */
+::selection {
+	background: var(--color-primary);
+	color: #fff;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Source Sans Pro', Arial, Arial, Helvetica, sans-serif;
+	background-color: var(--color-body);
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* Links */
+a {
+	color: #223440;
+	text-decoration: none;
+}

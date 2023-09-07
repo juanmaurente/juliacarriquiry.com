@@ -1,0 +1,39 @@
+.contact__button {
+	cursor: pointer;
+	font-size: 1.4rem;
+	padding: 1.6rem;
+	border: 0;
+	transition: all ease 0.2s;
+
+	&:hover {
+		transform: scale(1.05);
+		font-weight: 500;
+	}
+
+	&--black {
+		background-color: var(--color-headings);
+		color: var(--color-gray);
+
+		&:hover {
+			background-color: var(--color-gray);
+			color: #223440;
+		}
+	}
+
+	&--grey {
+		background-color: var(--color-gray);
+		color: #223440;
+
+		&:hover {
+			background-color: var(--color-headings);
+			color: var(--color-gray);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact__button {
+		font-size: 1.6rem;
+		padding: 1.8rem;
+	}
+}
