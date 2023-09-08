@@ -43,7 +43,13 @@ textarea {
 }
 
 .form__button {
+	margin-top: 10px;
 	align-self: flex-end;
+}
+
+.form__button:active {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
 }
 
 .footer {

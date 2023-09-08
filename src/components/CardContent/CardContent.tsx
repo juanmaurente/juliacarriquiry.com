@@ -10,7 +10,12 @@ const CardContent = () => {
 	return (
 		<>
 			<section>
-				<div className='content__container content__container-left container'>
+				<div
+					className='content__container content__container-left container'
+					data-aos='fade-zoom-in'
+					data-aos-easing='ease-in-back'
+					data-aos-delay='300'
+					data-aos-offset='0'>
 					<div className='content__image'>
 						<img src={welcome} />
 					</div>
@@ -28,7 +33,7 @@ const CardContent = () => {
 					className='content__container container'
 					data-aos='fade-zoom-in'
 					data-aos-easing='ease-in-back'
-					data-aos-delay='300'
+					data-aos-delay='1000'
 					data-aos-offset='0'>
 					<div className='content__image'>
 						<img src={people} />
@@ -46,7 +51,12 @@ const CardContent = () => {
 				</div>
 			</section>
 			<section>
-				<div className='content__container content__container-left container'>
+				<div
+					className='content__container content__container-left container'
+					data-aos='fade-zoom-in'
+					data-aos-easing='ease-in-back'
+					data-aos-delay='400'
+					data-aos-offset='0'>
 					<div className='content__image'>
 						<img src={product} />
 					</div>
@@ -63,7 +73,12 @@ const CardContent = () => {
 				</div>
 			</section>
 			<section>
-				<div className='content__container container'>
+				<div
+					className='content__container container'
+					data-aos='fade-zoom-in'
+					data-aos-easing='ease-in-back'
+					data-aos-delay='400'
+					data-aos-offset='0'>
 					<div className='content__image'>
 						<img src={food} />
 					</div>
