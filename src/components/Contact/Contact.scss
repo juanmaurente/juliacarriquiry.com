@@ -47,6 +47,11 @@ textarea {
 	align-self: flex-end;
 }
 
+.form__button:active {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+}
+
 .footer {
 	height: 30rem;
 }

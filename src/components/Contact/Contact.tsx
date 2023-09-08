@@ -50,6 +50,11 @@ const Contact = () => {
 			if (response.ok) {
 				// Procesar la respuesta de éxito
 				console.log('Formulario enviado con éxito');
+				setFormData({
+					name: '',
+					email: '',
+					message: '',
+				});
 			} else {
 				// Procesar posibles errores
 				console.error('Error al enviar el formulario');
