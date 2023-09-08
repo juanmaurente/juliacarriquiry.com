@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Contact.scss';
 import sanitizeHtml from 'sanitize-html';
+import Button from '../Button/Button';
 
 const Contact = () => {
 	const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
@@ -62,8 +63,10 @@ const Contact = () => {
 		<section id='contact'>
 			<div
 				className='contact__container container'
-				data-aos='fade-up'
-				data-aos-duration='1500'>
+				data-aos='fade-zoom-in'
+				data-aos-easing='ease-in-back'
+				data-aos-delay='300'
+				data-aos-offset='0'>
 				<div className='contact__header'>
 					<h2>Contact</h2>
 					<p>
