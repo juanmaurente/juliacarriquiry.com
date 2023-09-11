@@ -18,10 +18,10 @@ const CardContent = () => {
 					data-aos-offset='0'>
 					<div className='content__image'>
 						<img src={welcome} />
-						<h1>Hola</h1>
 					</div>
 					<div className='content__card content__card--black'>
 						<h1>Julia Carriquiry photography | Sydney</h1>
+						<h1>Hola</h1>
 						<p>
 							Capturing life's moments through stunning
 							photography.
