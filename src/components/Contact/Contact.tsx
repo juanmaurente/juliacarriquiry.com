@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './Contact.scss';
 import sanitizeHtml from 'sanitize-html';
-import Button from '../Button/Button';
 
 const Contact = () => {
 	const apiKey = import.meta.env.VITE_REACT_APP_API_KEY;
