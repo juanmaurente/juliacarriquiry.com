@@ -1,10 +1,11 @@
 import './CardContent.scss';
 import '../../assets/images/welcome.webp';
-import Button from '../Button/Button';
+
 import welcome from '../../assets/images/welcome.webp';
 import people from '../../assets/images/people1.webp';
 import food from '../../assets/images/food1.webp';
 import product from '../../assets/images/product6.webp';
+import Button from '../Button/Button';
 
 const CardContent = () => {
 	return (
@@ -21,7 +22,6 @@ const CardContent = () => {
 					</div>
 					<div className='content__card content__card--black'>
 						<h1>Julia Carriquiry photography | Sydney</h1>
-						<h1>Hola</h1>
 						<p>
 							Capturing life's moments through stunning
 							photography.
