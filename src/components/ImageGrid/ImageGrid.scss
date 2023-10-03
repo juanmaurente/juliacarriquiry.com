@@ -1,0 +1,54 @@
+/* Estilo del contenedor principal */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	overflow: hidden; /* Para ocultar imágenes adicionales */
+	width: 30vw;
+	height: 100vh; /* Ajusta la altura según el tamaño deseado para mostrar 3 imágenes */
+	position: relative; /* Permite posicionar los chevrones correctamente */
+}
+
+/* Estilo de las imágenes */
+.image {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Asegura que las imágenes ocupen toda la altura del contenedor */
+}
+
+.image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: transform 0.5s ease;
+}
+
+.image:hover img {
+	transform: scale(1.2);
+}
+
+/* Estilo de los chevrones de scroll */
+.chevron-up,
+.chevron-down {
+	font-size: 24px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	padding: 10px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.chevron-up {
+	top: 10px; /* Posición en el borde superior */
+	left: 50%; /* Centra horizontalmente */
+	transform: translateX(-50%); /* Centra horizontalmente */
+}
+
+.chevron-down {
+	bottom: 10px; /* Posición en el borde inferior */
+	left: 50%; /* Centra horizontalmente */
+	transform: translateX(-50%); /* Centra horizontalmente */
+}

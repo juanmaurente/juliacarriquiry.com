@@ -20,7 +20,7 @@ const CardContent = () => {
 
 	return (
 		<>
-			{data.map((section: CardContentData, index: number) => (
+			{data.content.map((section: CardContentData, index: number) => (
 				<section key={index}>
 					<div
 						className={`content__container ${

@@ -1,26 +1,44 @@
-[
-	{
-		"titulo": "Julia Carriquiry photography | Sydney",
-		"photo": "welcome",
-		"text": "Capturing life's moments through stunning photography.",
-		"link": "/myLink1"
-	},
-	{
-		"titulo": "Portrait Photography Services",
-		"photo": "people",
-		"text": "Professional portraits that showcase your personality and style. Perfect for headshots, families, and couples. Contact me to book your portrait session today.",
-		"link": "/myLink2"
-	},
-	{
-		"titulo": "Commercial Photography Services",
-		"photo": "product",
-		"text": "Professional product photography that showcases your brand. Perfect for e-commerce, advertising, and catalogs. Contact me to elevate your product imagery.",
-		"link": "/myLink3"
-	},
-	{
-		"titulo": "Food Photography Services",
-		"photo": "food",
-		"text": "Mouth-watering photos that highlight your cuisine. Perfect for restaurants, cafes, and food bloggers. Contact me to showcase your delicious dishes.",
-		"link": "/myLink4"
-	}
-]
+{
+	"content": [
+		{
+			"titulo": "Julia Carriquiry photography | Sydney",
+			"photo": "welcome",
+			"text": "Capturing life's moments through stunning photography.",
+			"link": "/myLink1"
+		},
+		{
+			"titulo": "Portrait Photography Services",
+			"photo": "people",
+			"text": "Professional portraits that showcase your personality and style. Perfect for headshots, families, and couples. Contact me to book your portrait session today.",
+			"link": "/myLink2"
+		},
+		{
+			"titulo": "Commercial Photography Services",
+			"photo": "product",
+			"text": "Professional product photography that showcases your brand. Perfect for e-commerce, advertising, and catalogs. Contact me to elevate your product imagery.",
+			"link": "/myLink3"
+		},
+		{
+			"titulo": "Food Photography Services",
+			"photo": "food",
+			"text": "Mouth-watering photos that highlight your cuisine. Perfect for restaurants, cafes, and food bloggers. Contact me to showcase your delicious dishes.",
+			"link": "/myLink4"
+		}
+	],
+	"images": [
+		{ "photo": "food1", "category": "food" },
+		{ "photo": "food2", "category": "food" },
+		{ "photo": "people1", "category": "people" },
+		{ "photo": "people2", "category": "people" },
+		{ "photo": "people3", "category": "people" },
+		{ "photo": "people4", "category": "people" },
+		{ "photo": "product1", "category": "product" },
+		{ "photo": "product2", "category": "product" },
+		{ "photo": "product3", "category": "product" },
+		{ "photo": "product4", "category": "product" },
+		{ "photo": "product5", "category": "product" },
+		{ "photo": "product6", "category": "product" },
+		{ "photo": "product7", "category": "product" },
+		{ "photo": "product8", "category": "product" }
+	]
+}
