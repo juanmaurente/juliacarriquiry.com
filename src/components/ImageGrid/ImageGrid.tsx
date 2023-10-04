@@ -19,7 +19,16 @@ import { ImageKey } from '../../util/imageKey';
 import { useState } from 'react';
 import { icons } from 'react-icons';
 
-const ImageGrid = () => {
+interface Image {
+	photo: string;
+	category: string;
+}
+
+interface ImageGridProps {
+	images: Image[];
+}
+
+const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
 	const imageMap: Record<ImageKey, string> = {
 		people1: people1,
 		people2: people2,
@@ -35,24 +44,16 @@ const ImageGrid = () => {
 		product8: product8,
 	};
 
-	const peopleImages = data.images.filter(
-		(image) => image.category === 'people',
-	);
-
-	const productImages = data.images.filter(
-		(image) => image.category === 'product',
-	);
-
 	const initialDisplayCount = 3; // Cantidad inicial de imágenes a mostrar
 	const [displayIndex, setDisplayIndex] = useState(0);
 
-	const visibleImages = productImages.slice(
+	const visibleImages = images.slice(
 		displayIndex,
 		displayIndex + initialDisplayCount,
 	);
 
 	const handleChevronDownClick = () => {
-		if (displayIndex + 1 < productImages.length - initialDisplayCount + 1) {
+		if (displayIndex + 1 < images.length - initialDisplayCount + 1) {
 			setDisplayIndex(displayIndex + 1);
 		} else {
 			setDisplayIndex(0); // Vuelve al principio si no hay más elementos
@@ -64,7 +65,7 @@ const ImageGrid = () => {
 			setDisplayIndex(displayIndex - 1);
 		} else {
 			// Si estás en el primer índice, muestra las últimas imágenes
-			setDisplayIndex(productImages.length - initialDisplayCount);
+			setDisplayIndex(images.length - initialDisplayCount);
 		}
 	};
 
@@ -72,14 +73,29 @@ const ImageGrid = () => {
 		<>
 			<div className='container container-centered'>
 				<div className='grid-container '>
-					{visibleImages.map((image, index) => (
-						<div className='image people' key={index}>
-							<img
-								src={imageMap[image.photo as ImageKey] || ''}
-								alt='People Image'
-							/>
-						</div>
-					))}
+					{visibleImages.map((image, index) => {
+						// Calcula la clase según la posición
+						let imageClass = 'image people';
+
+						if (index === 0) {
+							imageClass += ' image-top'; // Para la primera imagen (mitad inferior)
+						} else if (index === 1) {
+							imageClass += ' image-middle'; // Para la segunda imagen (imagen completa)
+						} else {
+							imageClass += ' image-bottom'; // Para la tercera imagen (mitad superior)
+						}
+
+						return (
+							<div className={imageClass} key={index}>
+								<img
+									src={
+										imageMap[image.photo as ImageKey] || ''
+									}
+									alt='People Image'
+								/>
+							</div>
+						);
+					})}
 				</div>
 				<FaChevronUp
 					className='chevron-up'

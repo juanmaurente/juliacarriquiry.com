@@ -7,38 +7,81 @@
 
 /* Estilo del contenedor principal */
 .grid-container {
-	margin: 10px;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 10px;
+	gap: 15px;
 	overflow: hidden; /* Para ocultar imágenes adicionales */
-	max-width: 20vw;
-	height: 90vh; /* Ajusta la altura según el tamaño deseado para mostrar 3 imágenes */
+	width: 350px;
+	height: 100vh; /* Ajusta la altura según el tamaño deseado para mostrar 3 imágenes */
 }
 
 /* Estilo de las imágenes */
 .image {
 	position: relative;
+	height: 350px; /* Asegura que las imágenes ocupen toda la altura del contenedor */
 	overflow: hidden;
-	height: 100%; /* Asegura que las imágenes ocupen toda la altura del contenedor */
+
+	&:hover {
+		border: 1px solid rgba(0, 0, 0, 0.315);
+		box-shadow: 9px 8px 37px -15px rgba(87, 87, 87, 0.95);
+		-webkit-box-shadow: 9px 8px 37px -15px rgba(87, 87, 87, 0.95);
+		-moz-box-shadow: 9px 8px 37px -15px rgba(87, 87, 87, 0.95);
+	}
 }
 
 .image img {
 	width: 100%;
-	// height: auto;
+	height: 100%;
 	display: block;
 	transition: transform 0.5s ease;
+	object-fit: cover;
 }
 
 .image:hover img {
 	transform: scale(1.2);
 }
 
+.image-top img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	filter: grayscale(70%);
+	transition: all 0.5s ease;
+
+	&:hover {
+		filter: grayscale(0%);
+	}
+}
+
+/* Estilo para la segunda imagen (imagen completa) */
+.image-middle img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center; /* Muestra la imagen completa */
+	display: block;
+	transition: transform 0.5s ease;
+}
+
+/* Estilo para la tercera imagen (mitad superior) */
+.image-bottom img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	filter: grayscale(70%);
+	transition: all 0.5s ease;
+
+	&:hover {
+		filter: grayscale(0%);
+	}
+}
 /* Estilo de los chevrones de scroll */
 .chevron-up,
 .chevron-down {
 	font-size: 5rem;
-	background-color: #3333336e;
+	background-color: #33333323;
 	color: white;
 	border: none;
 	border-radius: 50%;
@@ -46,6 +89,12 @@
 	position: absolute;
 	cursor: pointer;
 	z-index: 2;
+	transition: all 0.5s ease;
+
+	&:hover {
+		background-color: #333333c4;
+		border: 1px solid rgba(0, 255, 255, 0.562);
+	}
 }
 
 .chevron-up {
