@@ -1,4 +1,5 @@
 import './ImageGrid.scss';
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 import people1 from '../../assets/images/people1.webp';
 import people2 from '../../assets/images/people2.jpg';
@@ -16,6 +17,7 @@ import product8 from '../../assets/images/product8.jpg';
 import data from '../../util/data.json';
 import { ImageKey } from '../../util/imageKey';
 import { useState } from 'react';
+import { icons } from 'react-icons';
 
 const ImageGrid = () => {
 	const imageMap: Record<ImageKey, string> = {
@@ -68,22 +70,26 @@ const ImageGrid = () => {
 
 	return (
 		<>
-			<div className='grid-container container'>
-				{visibleImages.map((image, index) => (
-					<div className='image people' key={index}>
-						<img
-							src={imageMap[image.photo as ImageKey] || ''}
-							alt='People Image'
-						/>
-					</div>
-				))}
+			<div className='container container-centered'>
+				<div className='grid-container '>
+					{visibleImages.map((image, index) => (
+						<div className='image people' key={index}>
+							<img
+								src={imageMap[image.photo as ImageKey] || ''}
+								alt='People Image'
+							/>
+						</div>
+					))}
+				</div>
+				<FaChevronUp
+					className='chevron-up'
+					onClick={handleChevronUpClick}
+				/>
+				<FaChevronDown
+					className='chevron-down'
+					onClick={handleChevronDownClick}
+				/>
 			</div>
-			<button className='chevron-up' onClick={handleChevronUpClick}>
-				⌃
-			</button>
-			<button className='chevron-down' onClick={handleChevronDownClick}>
-				⌄
-			</button>
 		</>
 	);
 };
