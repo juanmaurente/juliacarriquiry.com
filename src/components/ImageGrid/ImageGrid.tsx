@@ -75,14 +75,14 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
 				<div className='grid-container '>
 					{visibleImages.map((image, index) => {
 						// Calcula la clase según la posición
-						let imageClass = 'image people';
+						let imageClass = 'image';
 
 						if (index === 0) {
-							imageClass += ' image-top'; // Para la primera imagen (mitad inferior)
+							imageClass += ' image-top';
 						} else if (index === 1) {
-							imageClass += ' image-middle'; // Para la segunda imagen (imagen completa)
+							imageClass += ' image-middle';
 						} else {
-							imageClass += ' image-bottom'; // Para la tercera imagen (mitad superior)
+							imageClass += ' image-bottom';
 						}
 
 						return (
