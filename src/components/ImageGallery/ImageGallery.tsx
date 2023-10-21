@@ -46,8 +46,6 @@ const ImageGallery = () => {
 		<>
 			<div className='container gallery-container'>
 				<ImageGrid images={productImages} />
-				<ImageGrid images={peopleImages} />
-				<ImageGrid images={productImages} />
 			</div>
 		</>
 	);

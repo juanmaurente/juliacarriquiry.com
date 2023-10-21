@@ -45,6 +45,7 @@ const CardContent = () => {
 							<h1>{section.titulo}</h1>
 							<p>{section.text}</p>
 							<Button />
+							<p>See more</p>
 						</div>
 					</div>
 				</section>
