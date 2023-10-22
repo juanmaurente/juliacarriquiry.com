@@ -93,30 +93,33 @@ const ImageGallery = ({ selectedCategory, onClose, showGallery }: Props) => {
 	);
 
 	return (
-		<div className='modal-overlay'>
-			<div className='modal-content'>
-				<div className='close-button'>
-					<AiOutlineClose onClick={onClose} />
-				</div>
-				<div className='container-centered'>
-					<div className='grid-container '>
-						{selectedImages.map((image, index) => {
-							return (
-								<div className='image' key={index}>
-									<img
-										src={
-											imageMap[image.photo as ImageKey] ||
-											''
-										}
-										alt={image.photo}
-									/>
-								</div>
-							);
-						})}
+		showGallery && (
+			<div className='modal-overlay'>
+				<div className='modal-content'>
+					<div className='close-button'>
+						<AiOutlineClose onClick={onClose} />
+					</div>
+					<div className='container-centered'>
+						<div className='grid-container '>
+							{selectedImages.map((image, index) => {
+								return (
+									<div className='image' key={index}>
+										<img
+											src={
+												imageMap[
+													image.photo as ImageKey
+												] || ''
+											}
+											alt={image.photo}
+										/>
+									</div>
+								);
+							})}
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		)
 	);
 };
 
