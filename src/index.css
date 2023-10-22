@@ -1,4 +1,5 @@
 @import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Source+Sans+3:wght@300;400;600&display=swap');
 
 :root {
 	--color-primary: #4a548c;
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-	font-family: 'Source Sans Pro', Arial, Arial, Helvetica, sans-serif;
+	font-family: 'Source Sans 3', sans-serif, Arial, Helvetica, sans-serif;
 	background-color: var(--color-body);
 	font-size: 2rem;
 	line-height: 1.5;
