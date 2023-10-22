@@ -1,4 +1,5 @@
 import './CardContent.scss';
+import { FaRegImages } from 'react-icons/fa';
 
 import welcome from '../../assets/images/welcome.webp';
 import people from '../../assets/images/people1.webp';
@@ -32,7 +33,7 @@ const CardContent = ({ setSelectedCategory }: Props) => {
 						} container`}
 						data-aos='fade-zoom-in'
 						data-aos-easing='ease-in-back'
-						data-aos-delay={index * 400 + 300}
+						data-aos-delay={400}
 						data-aos-offset='0'>
 						<div className='content__image'>
 							<img
@@ -51,13 +52,12 @@ const CardContent = ({ setSelectedCategory }: Props) => {
 							<div className='content__buttons'>
 								<Button />
 								{section.photo !== 'welcome' && (
-									<a
+									<FaRegImages
+										className='gallery__icon'
 										onClick={() =>
 											setSelectedCategory(section.photo)
 										}
-										className='seeMore'>
-										See more
-									</a>
+									/>
 								)}
 							</div>
 						</div>

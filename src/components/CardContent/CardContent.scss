@@ -44,7 +44,6 @@
 
 .content__card--white {
 	background-color: #fff;
-	color: var(--color-headings);
 }
 
 .content__card--white p {
@@ -58,14 +57,15 @@
 	display: inline-flex;
 	align-items: center;
 }
-.seeMore {
-	color: rgba(186, 143, 255, 0.767);
-	padding-left: 20px;
-	text-decoration: underline;
+
+.gallery__icon {
+	cursor: pointer;
+	border: 0;
+	transition: all ease 0.2s;
+	margin-left: 30px;
 
 	&:hover {
-		cursor: pointer;
-		color: rgb(186, 143, 255);
+		transform: scale(1.1);
 	}
 }
 

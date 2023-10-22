@@ -18,11 +18,35 @@
 
 /* Estilo de las imágenes */
 .grid-container img {
-	max-height: 500px;
+	width: 100%;
+	padding: 2px 0;
+	box-shadow: 10px 10px 59px -21px rgba(196, 166, 166, 0.76);
+	-webkit-box-shadow: 10px 10px 59px -21px rgba(194, 163, 163, 0.76);
+	-moz-box-shadow: 10px 10px 59px -21px rgba(190, 170, 170, 0.76);
 	float: right;
+
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+	animation-range: entry 15% cover 40%;
+	animation-fill-mode: both;
 
 	&:hover {
 		cursor: pointer;
+	}
+}
+
+@keyframes show {
+	from {
+		opacity: 0.8;
+		scale: 90%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
 	}
 }
 
