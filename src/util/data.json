@@ -3,14 +3,12 @@
 		{
 			"titulo": "Julia Carriquiry photography | Sydney",
 			"photo": "welcome",
-			"text": "Capturing life's moments through stunning photography.",
-			"link": "/myLink1"
+			"text": "Capturing life's moments through stunning photography."
 		},
 		{
 			"titulo": "Portrait Photography Services",
 			"photo": "people",
-			"text": "Professional portraits that showcase your personality and style. Perfect for headshots, families, and couples. Contact me to book your portrait session today.",
-			"link": "/myLink2"
+			"text": "Professional portraits that showcase your personality and style. Perfect for headshots, families, and couples. Contact me to book your portrait session today."
 		},
 		{
 			"titulo": "Commercial Photography Services",
@@ -21,17 +19,34 @@
 		{
 			"titulo": "Food Photography Services",
 			"photo": "food",
-			"text": "Mouth-watering photos that highlight your cuisine. Perfect for restaurants, cafes, and food bloggers. Contact me to showcase your delicious dishes.",
-			"link": "/myLink4"
+			"text": "Mouth-watering photos that highlight your cuisine. Perfect for restaurants, cafes, and food bloggers. Contact me to showcase your delicious dishes."
 		}
 	],
 	"images": [
 		{ "photo": "food1", "category": "food" },
 		{ "photo": "food2", "category": "food" },
+		{ "photo": "food3", "category": "food" },
+		{ "photo": "food4", "category": "food" },
+		{ "photo": "food5", "category": "food" },
+		{ "photo": "food6", "category": "food" },
+		{ "photo": "food7", "category": "food" },
+		{ "photo": "food8", "category": "food" },
+		{ "photo": "food9", "category": "food" },
+		{ "photo": "food10", "category": "food" },
+		{ "photo": "food11", "category": "food" },
+		{ "photo": "food12", "category": "food" },
 		{ "photo": "people1", "category": "people" },
 		{ "photo": "people2", "category": "people" },
 		{ "photo": "people3", "category": "people" },
 		{ "photo": "people4", "category": "people" },
+		{ "photo": "people5", "category": "people" },
+		{ "photo": "people6", "category": "people" },
+		{ "photo": "people7", "category": "people" },
+		{ "photo": "people8", "category": "people" },
+		{ "photo": "people9", "category": "people" },
+		{ "photo": "people10", "category": "people" },
+		{ "photo": "people11", "category": "people" },
+		{ "photo": "people12", "category": "people" },
 		{ "photo": "product1", "category": "product" },
 		{ "photo": "product2", "category": "product" },
 		{ "photo": "product3", "category": "product" },
@@ -39,6 +54,10 @@
 		{ "photo": "product5", "category": "product" },
 		{ "photo": "product6", "category": "product" },
 		{ "photo": "product7", "category": "product" },
-		{ "photo": "product8", "category": "product" }
+		{ "photo": "product8", "category": "product" },
+		{ "photo": "product9", "category": "product" },
+		{ "photo": "product10", "category": "product" },
+		{ "photo": "product11", "category": "product" },
+		{ "photo": "product12", "category": "product" }
 	]
 }
