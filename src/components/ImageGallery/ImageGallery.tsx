@@ -1,6 +1,7 @@
 import './ImageGallery.scss';
 import { ImageKey } from '../../util/imageKey';
 import data from '../../util/data.json';
+import { AiOutlineClose } from 'react-icons/ai';
 
 import {
 	people1,
@@ -44,9 +45,10 @@ import {
 interface Props {
 	selectedCategory: ImageKey;
 	onClose: () => void;
+	showGallery: boolean;
 }
 
-const ImageGallery = ({ selectedCategory, onClose }: Props) => {
+const ImageGallery = ({ selectedCategory, onClose, showGallery }: Props) => {
 	const imageMap: Record<string, string> = {
 		people1: people1,
 		people2: people2,
@@ -93,7 +95,9 @@ const ImageGallery = ({ selectedCategory, onClose }: Props) => {
 	return (
 		<div className='modal-overlay'>
 			<div className='modal-content'>
-				<div className='close-button'></div>
+				<div className='close-button'>
+					<AiOutlineClose onClick={onClose} />
+				</div>
 				<div className='container-centered'>
 					<div className='grid-container '>
 						{selectedImages.map((image, index) => {

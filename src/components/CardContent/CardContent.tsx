@@ -1,21 +1,20 @@
 import './CardContent.scss';
 import { FaRegImages } from 'react-icons/fa';
-
 import welcome from '../../assets/images/welcome.webp';
 import people from '../../assets/images/people1.webp';
 import food from '../../assets/images/food1.webp';
 import product from '../../assets/images/product6.webp';
-
 import { CardContentData } from '../../util/data';
-import data from '../../util/data.json'; // Importa el archivo JSON
+import data from '../../util/data.json';
 import { ImageKey } from '../../util/imageKey';
 import Button from '../Button/Button';
 
 interface Props {
-	setSelectedCategory: (category: string) => void;
+	setSelectedCategory: (category: ImageKey) => void;
+	setShowGallery: (category: boolean) => void;
 }
 
-const CardContent = ({ setSelectedCategory }: Props) => {
+const CardContent = ({ setSelectedCategory, setShowGallery }: Props) => {
 	const imageMap: Record<ImageKey, string> = {
 		welcome: welcome,
 		people: people,
@@ -54,9 +53,12 @@ const CardContent = ({ setSelectedCategory }: Props) => {
 								{section.photo !== 'welcome' && (
 									<FaRegImages
 										className='gallery__icon'
-										onClick={() =>
-											setSelectedCategory(section.photo)
-										}
+										onClick={() => {
+											setSelectedCategory(
+												section.photo as ImageKey,
+											);
+											setShowGallery(true);
+										}}
 									/>
 								)}
 							</div>
