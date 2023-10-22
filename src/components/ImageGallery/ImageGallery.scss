@@ -45,6 +45,7 @@
 /* Estilo de las imágenes */
 .grid-container img {
 	width: 100%;
+	object-fit: cover;
 	padding: 2px 0;
 	box-shadow: 10px 10px 59px -21px rgba(196, 166, 166, 0.76);
 	-webkit-box-shadow: 10px 10px 59px -21px rgba(194, 163, 163, 0.76);
@@ -84,7 +85,9 @@
 	}
 
 	.grid-container img {
-		max-width: 600px;
+		max-width: 450px;
+		height: 450px;
+		object-fit: cover;
 		padding: 2px;
 
 		&:hover {
@@ -98,9 +101,5 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-	}
-
-	.grid-container img {
-		max-width: 550px;
 	}
 }
