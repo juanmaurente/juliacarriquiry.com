@@ -1,23 +1,23 @@
 {
 	"content": [
 		{
-			"titulo": "Julia Carriquiry photography | Sydney",
+			"titulo": "Photography | Sydney",
 			"photo": "welcome",
 			"text": "Capturing life's moments through stunning photography."
 		},
 		{
-			"titulo": "Portrait Photography Services",
+			"titulo": "Portraits",
 			"photo": "people",
 			"text": "Professional portraits that showcase your personality and style. Perfect for headshots, families, and couples. Contact me to book your portrait session today."
 		},
 		{
-			"titulo": "Commercial Photography Services",
+			"titulo": "Commercial Photography",
 			"photo": "product",
 			"text": "Professional product photography that showcases your brand. Perfect for e-commerce, advertising, and catalogs. Contact me to elevate your product imagery.",
 			"link": "/myLink3"
 		},
 		{
-			"titulo": "Food Photography Services",
+			"titulo": "Food Photography",
 			"photo": "food",
 			"text": "Mouth-watering photos that highlight your cuisine. Perfect for restaurants, cafes, and food bloggers. Contact me to showcase your delicious dishes."
 		}
